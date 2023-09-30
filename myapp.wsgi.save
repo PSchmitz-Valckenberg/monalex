@@ -1,0 +1,13 @@
+<VirtualHost *:80>
+    ServerName monalexdictionary.com  # Replace with your domain or server IP
+    ServerAlias www.monalexdictionary.com
+
+    DocumentRoot /User/by/Documents/Github/monalex/dictionary_project    WSGIScriptAlias / /User/by/Documents/Github/monalex/dictionary_project
+
+    <Directory /User/by/Documents/Github/monalex/dictionary_project>
+        Require all granted
+    </Directory>
+
+    ErrorLog ${APACHE_LOG_DIR}/error.log
+    CustomLog ${APACHE_LOG_DIR}/access.log combined
+</VirtualHost>	^X

@@ -1,0 +1,12 @@
+RewriteEngine On
+
+# Wenn die Anfrage bereits an den lokalen Port 8000 gerichtet ist, beende die Rewrite-Verarbeitung.
+RewriteCond %{HTTP_HOST} ^localhost$
+RewriteCond %{SERVER_PORT} ^8000$
+RewriteRule ^ - [L]
+
+# Andernfalls weiterleiten zur Flask-Anwendung auf Port 8000.
+RewriteRule ^$ http://localhost:8000/ [P]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ http://localhost:8000/$1 [P]
