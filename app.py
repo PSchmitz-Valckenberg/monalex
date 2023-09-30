@@ -61,7 +61,7 @@ def get_db_connection():
         #     dbname="dictionary_database",
         #     user="by",
         # )
-        connection = psycopg2.connect("postgresql://postgres:dictionary_database@123@db.ydudusukuaxbutookzda.supabase.co:5432/postgres")
+        connection = psycopg2.connect("    postgres://jfjqfegokfdmqs:2f9519107e8623282872832a70c87024e1c3df9e48fd1090931b42932937634c@ec2-52-45-200-167.compute-1.amazonaws.com:5432/dbvofhp9q0uih6")
         return connection
     except psycopg2.Error as e:
         app.logger.error(f"Error connecting to the database: {e}")
