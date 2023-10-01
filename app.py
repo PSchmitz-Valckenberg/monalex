@@ -64,7 +64,7 @@ def get_db_connection():
             database="gvdwih7dguqa17np"
         )
         return connection
-    except psycopg2.Error as e:
+    except mysql.connector.Error as e:
         app.logger.error(f"Error connecting to the database: {e}")
         return None
 
