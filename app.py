@@ -57,7 +57,7 @@ def conjugaison():
 
 def get_db_connection():
     try:
-         connection = mysql.connector.connect(
+        connection = mysql.connector.connect(
             host="phtfaw4p6a970uc0.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
             user="jmvw95cqs4vqi9bt",
             password="gjkfs7hre2s94z3i",
