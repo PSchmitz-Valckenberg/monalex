@@ -79,7 +79,7 @@ def search():
 
     cursor = connection.cursor()
 
-    sql_query = "SELECT word FROM dictionary WHERE word LIKE %s"
+    sql_query = "SELECT word, definition FROM dictionary WHERE word LIKE %s"
     search_term = f"%{word}%"  # Define the search_term here
     cursor.execute(sql_query, (search_term,))
     results = cursor.fetchall()
