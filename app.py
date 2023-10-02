@@ -58,10 +58,10 @@ def conjugaison():
 def get_db_connection():
     try:
         connection = mysql.connector.connect(
-            host="phtfaw4p6a970uc0.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
-            user="jmvw95cqs4vqi9bt",
-            password="gjkfs7hre2s94z3i",
-            database="gvdwih7dguqa17np"
+            host="qao3ibsa7hhgecbv.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+            user="nb0jh2iip2fklyx9",
+            password="m0g3dp0dsq1wjrxy",
+            database="poygkcm8i5u5jydz"
         )
         return connection
     except mysql.connector.Error as e:
